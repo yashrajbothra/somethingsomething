@@ -36,7 +36,11 @@ const animationTimeline = () => {
       opacity: 0,
       y: 10
     })
-    .from(".two", 0.4, {
+    .from(".two", 0.8, {
+      opacity: 0,
+      y: 10
+    })
+    .from(".twoandhalf", 0.8, {
       opacity: 0,
       y: 10
     })
@@ -51,7 +55,16 @@ const animationTimeline = () => {
     )
     .to(
       ".two",
-      0.7,
+      0.9,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "-=1"
+    )
+    .to(
+      ".twoandhalf",
+      0.9,
       {
         opacity: 0,
         y: 10
@@ -112,7 +125,7 @@ const animationTimeline = () => {
       backgroundColor: "rgb(21, 161, 237)",
       color: "#fff"
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
+    .to(".idea-3", 1, ideaTextTransLeave, "+=1.5")
     .from(".idea-4", 0.7, ideaTextTrans)
     .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
     .from(
@@ -129,7 +142,7 @@ const animationTimeline = () => {
       "+=0.5"
     )
     .to(
-      ".idea-5 span",
+      ".idea-5 span.smiley",
       0.7,
       {
         rotation: 90,
@@ -138,13 +151,69 @@ const animationTimeline = () => {
       "+=0.4"
     )
     .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1.5,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1,
+      },
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1.5,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      1,
+      {
+        scale: 1,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1.5,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1,
+      },
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      0.2,
+      {
+        scale: 1.5,
+      }
+    )
+    .to(
+      ".idea-5 span.heartbeat",
+      1,
+      {
+        scale: 1,
+      }
+    )
+    .to(
       ".idea-5",
-      0.7,
+      0.3,
       {
         scale: 0.2,
         opacity: 0
       },
-      "+=2"
+      "+=0.5"
     )
     .staggerFrom(
       ".idea-6 span",
@@ -171,7 +240,7 @@ const animationTimeline = () => {
     )
     .staggerFromTo(
       ".baloons img",
-      2.5,
+      2,
       {
         opacity: 0.9,
         y: 1400
