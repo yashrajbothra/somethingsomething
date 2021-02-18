@@ -2,7 +2,7 @@
   "name": "birthday-wishing-app",
   "version": "1.0.0",
   "description": "An app to wish your loved ones.",
-  "main": "index.js",
+  "main": "index.html",
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "run-script-os": "^1.1.5"
