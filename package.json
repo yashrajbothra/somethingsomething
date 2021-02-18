@@ -1,7 +1,7 @@
 {
-  "name": "happy-birthday",
+  "name": "birthday-wishing-app",
   "version": "1.0.0",
-  "description": "An app that let's you say happy birthday to your friend in a nerdy way.",
+  "description": "An app to wish your loved ones.",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -14,19 +14,10 @@
     "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faahim/happy-birthday.git"
-  },
   "keywords": [
     "Happy",
     "Birthday"
   ],
-  "author": "Afiur Rahman Fahim",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/faahim/happy-birthday/issues"
-  },
-  "homepage": "https://github.com/faahim/happy-birthday#readme",
+  "author": "Yash Raj Bothra",
   "dependencies": {}
 }
