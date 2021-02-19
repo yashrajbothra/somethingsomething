@@ -223,3 +223,32 @@ footer a {
 footer a:hover {
 	color: #276FBF;
 }
+
+.hbd {
+	color: #F6F4F3;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Lato", sans-serif;
+	font-size: .7em;
+	letter-spacing: 5px;
+	margin-top: 25%;
+	display: none;
+}
+
+.btn{
+	display: inline-block;
+	padding: 20px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+.btn {
+	background: #F6F4F3;
+	color: #183059;
+}
+
+.inside {
+	font-family: "Montserrat", sans-serif;
+	color: #183059;
+	font-size: 4em;
+}

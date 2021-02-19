@@ -1,19 +1,26 @@
 const year = new Date().getFullYear();
-const fourthOfJuly = new Date(year, 1,21).getTime();
+const fourthOfJuly = new Date(year, 1, 19, 6, 47).getTime();
 const month = new Date().getMonth();
-console.log(fourthOfJuly);
 // countdown
-let timer = setInterval(function() {
+let timer = setInterval(function () {
 
   // get today's date
   const today = new Date().getTime();
 
   // get the difference
   let diff;
-    diff = fourthOfJuly - today;
+  diff = fourthOfJuly - today;
+  var x = document.getElementsByClassName("hbd")[0];
+  var y = document.getElementById("timer");
+  console.log(x);
 
-
-
+  if (diff <= 0) {
+    x.style.display = "block";
+    y.style.display = "none";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+  }
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
